@@ -1,0 +1,127 @@
+* {
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('Wires.jpg');
+  background-position: center;
+  margin: 30px;
+  text-align: center;
+}
+
+.container {
+  background-color: white;
+  box-shadow: rgb(0, 183, 255) 0px 5px 15px;
+  border-radius: 30px;
+  width: 40%;
+  height: 92vh;
+  margin: 0 auto;
+  overflow: auto;
+  }
+
+@media screen and (max-width: 900px) {
+
+  .container {
+    width: 80%;
+  }
+
+  .title {
+    font-size: 30px !important;
+  }
+}
+
+.title {
+  margin-top: 45px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 50px;
+  color: color;
+  font-family: 'Courier New', Courier, monospace;
+  border: black solid 5px;
+  border-radius: 15px;
+  padding: 12px 15px;
+}
+
+#new-task-input {
+  position: relative;
+  padding: 15px;
+  width: 70%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border: 3px solid rgb(47, 73, 73,);
+  background-color:rgb(12, 114, 128);
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;  
+  font-family: cursive;
+}
+
+::placeholder {
+  color: black;
+  font-weight: 600;
+  font-family: cursive;
+}
+
+main {
+  margin-top: 150px;
+  padding: 2rem 1rem;
+}
+
+.task {
+  display: flex;
+  margin-left: 20%;
+}
+
+input, button {
+  appearance: none;
+  border: none;
+  outline: none; 
+  background: none;
+}
+
+#tasks .task {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  right: 10%;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 3px;
+}
+
+#tasks .actions button {
+  cursor: pointer;
+}
+
+.task .actions {
+  display: flex;
+}
+
+.task .actions .edit {
+  color: white; 
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.task .actions .delete {
+  color: rgb(110, 226, 241);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.text {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.task .content {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
