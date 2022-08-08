@@ -8,8 +8,20 @@
 body {
   margin: 30px;
   text-align: center;
-  background: url('blue.jpg');
+  background: #2A2424;
   background-size: cover;
+  display: flex;
+  justify-content: space-between
+}
+
+.todo {
+  position: relative; 
+  left: 80px;
+  top: 180px;
+  font-size: 50px;
+  font-family: 'Satisfy', cursive;
+  font-weight: 500;
+  color: white
 }
 
 .container {
@@ -19,7 +31,7 @@ body {
   margin: 0 auto;
   overflow: auto;
   border-radius: 10px;
-  background-color: #395B64;
+  background-color: #da9600;
  }
 
 @media screen and (max-width: 900px) {
@@ -29,7 +41,11 @@ body {
   }
 
   .title {
-    font-size: 50px !important;
+    font-size: 45px !important;
+  }
+
+  body {
+    flex-direction: column-reverse;
   }
 }
 
@@ -39,7 +55,6 @@ body {
   left: 50%;
   transform: translate(-50%);
   font-size: 50px;
-  color: color;
   font-family: 'Satisfy', cursive;
   border-radius: 15px;
   padding: 12px 15px;
@@ -52,7 +67,7 @@ body {
   padding: 15px;
   width: 70%;
   font-family: 'Noto Serif', serif;
-  background-color: #aecece;
+  background-color: white;
   border-radius: 10px;
   color: #2C3333;
   font-weight: 600;
@@ -86,7 +101,7 @@ input, button {
 }
 
 #tasks .task {
-  background-color: #2C3333;
+  background-color: #573c00;
   display: flex;
   justify-content: space-between;
   position: relative;
